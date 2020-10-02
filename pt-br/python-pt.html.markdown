@@ -141,6 +141,12 @@ b == a            # => True, objetos a e b tem o mesmo conteúdo
 # Se você precisa executar seu código Python3 com um interpretador Python 2.5 ou acima, você pode usar a velha forma para formatação de texto:
 "%s podem ser %s da forma %s" % ("Strings", "interpoladas", "antiga")  # => "Strings podem ser interpoladas da forma antiga"
 
+# Você pode formatar strings utilizando f-strings (Apenas no python 3.6+)
+nome = "Beto"
+f"{nome} quer comer lasanha." # => "Beto quer comer lasanha."
+# Você pode utilizar qualquer instrução dentro das chaves.
+f"{nome} tem {len(nome)} caracteres." # => Beto tem 4 caracteres.
+
 
 # None é um objeto
 None  # => None
